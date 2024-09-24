@@ -167,6 +167,19 @@ body.active { overflow-y: hidden; }
 
 .container { padding-inline: 15px; }
 
+.container2 {
+  display: flex;
+  justify-content: center;  /* Centraliza horizontalmente */
+  align-items: center;      /* Centraliza verticalmente */
+  height: 50vh;            /* Define a altura como 100% da viewport */
+  margin: 0;
+}
+
+.center-image {
+  max-width: 100%;          /* Limita o tamanho máximo da imagem */
+  height: auto;             /* Mantém a proporção */
+}
+
 .h1 {
   color: var(--white);
   font-family: var(--ff-refault);
@@ -374,7 +387,7 @@ body.active { overflow-y: hidden; }
 \*-----------------------------------*/
 
 .hero {
-  background: url("../images/hero-banner.jpg") no-repeat;
+  background: url("../images/hero-banner.png") no-repeat;
   background-size: cover;
   background-position: top center;
   margin-top: 90px;
@@ -1455,7 +1468,7 @@ body.active { overflow-y: hidden; }
   .header-actions .search {
     color: var(--white);
     font-size: 18px;
-    padding: 25px;
+    padding: 10px;
     transition: var(--transition-1);
   }
 
