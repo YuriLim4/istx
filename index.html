@@ -67,7 +67,7 @@
         <ul class="navbar-list">
 
           <li>
-            <a href="#hero" class="navbar-link">Início</a>
+            <a href="#navbar" class="navbar-link">Início</a>
           </li>
 
           <li>
@@ -196,50 +196,93 @@
         <!-- 
           - #ABOUT
         -->
-<style>
+        <style>
 
-  .about-banner {
-  position: relative;
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.about-img {
-  display: block;
-  width: 100%;
-  height: auto;
-  z-index: 1;
-  animation: float 6s ease-in-out infinite;  /* Apply floating animation */
-}
-
-/* Floating animation keyframes */
-@keyframes float {
-  0% {
-    transform: translateY(0);  /* Start at original position */
-  }
-  50% {
-    transform: translateY(-20px);  /* Move up by 20px */
-  }
-  100% {
-    transform: translateY(0);  /* Return to original position */
-  }
-}
-
-</style>
+          .about-banner {
+            position: relative;
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+          }
+        
+          .about-img, .character {
+            display: block;
+            width: 150%;  /* Increased size for characters */
+            height: auto;
+            z-index: 1;
+          }
+        
+          /* Floating animation keyframes */
+          @keyframes float {
+            0% {
+              transform: translateY(0);  /* Start at original position */
+            }
+            50% {
+              transform: translateY(-20px);  /* Move up by 20px */
+            }
+            100% {
+              transform: translateY(0);  /* Return to original position */
+            }
+          }
+        
+          /* Floating animation for each character */
+          .about-img {
+            animation: float 6s ease-in-out infinite;
+            top: 0;
+            left: 0;
+          }
+        
+          .character-1 {
+            animation: float 5s ease-in-out infinite;
+            top: 0px;  /* Adjusted to create some vertical distance */
+            left: 0px;  /* Position closer horizontally */
+          }
+        
+          .character-2 {
+            animation: float 7s ease-in-out infinite;
+            top: 0px;  /* Adjusted top position */
+            left: 0px;  /* Adjusted left position to maintain distance */
+          }
+        
+          .character-3 {
+            animation: float 9s ease-in-out infinite;
+            top: 0px;
+            left: 0px;  /* Adjusted to be close but not overlap */
+          }
+        
+          .character-4 {
+            animation: float 8s ease-in-out infinite;
+            top: 0px;
+            left: 0px;
+          }
+        
+          .character-5 {
+            animation: float 10s ease-in-out infinite;
+            top: 0px;
+            left: 0px;
+          }
+        
+        </style>
+        
+        
+        
         <section class="about" id="about">
           <div class="container">
 
             <figure class="about-banner">
 
-              <img src="./assets/images/about-img.png" alt="M shape" class="about-img">
-<!--
-              <img src="./assets/images/character-1.png" alt="Game character" class="character character-1">
+              <img src="./assets/images/image1.png" alt="M shape" class="about-img">
 
-              <img src="./assets/images/character-2.png" alt="Game character" class="character character-2">
+              <img src="./assets/images/image2.png" alt="Game character" class="character character-1">
 
-              <img src="./assets/images/character-3.png" alt="Game character" class="character character-3">
--->
+              <img src="./assets/images/image3.png" alt="Game character" class="character character-3">
+
+              <img src="./assets/images/image4.png" alt="Game character" class="character character-3">
+
+              <img src="./assets/images/image5.png" alt="Game character" class="character character-3">
+
+              <img src="./assets/images/image6.png" alt="Game character" class="character character-3">
+
             </figure>
 
             <div class="about-content">
